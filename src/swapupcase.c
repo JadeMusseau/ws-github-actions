@@ -22,8 +22,7 @@ int swapupcase(char *str)
         return EPITECH_KO;
     res = trim_numbers(str, is_string_odd);
     if (res == ERROR)
-        return EPITECH_KO;
-    int i = 0;
+        return EPITECH_KO;     
     res = swap_string(str, is_string_odd);
     if (res == ERROR)
         return EPITECH_KO;
