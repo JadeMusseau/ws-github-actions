@@ -16,7 +16,7 @@ jobs:
     steps:
 
       - name: Checkout GH repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@master
 
       - name: Run coding-style checker
         run: check.sh $(pwd) $(pwd)
@@ -24,7 +24,7 @@ jobs:
       - name: Report Banana result
         run: |
           NB_ERROR=$(cat coding-style-reports.log | wc -l)
-          if [$NB_ERROR -gt 0]; then
+          if [ $NB_ERROR -gt 0 ]; then
             ERROR=$(cat coding-style-reports.log)
             echo"::error title=$NB_ERROR errors found::$ERROR"
             exit 1
