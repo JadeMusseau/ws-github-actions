@@ -10,8 +10,7 @@ jobs:
   coding-style:
     runs-on: ubuntu-latest
     container: 
-      image: ghcr.io/epitech/
-    coding-style-checker:latest
+      image: ghcr.io/epitech/coding-style-checker:latest
 
     steps:
 
