@@ -20,6 +20,7 @@ int swapupcase(char *str)
         return EPITECH_KO;
     if (size == ERROR)
         return EPITECH_KO;
+    int i = 0;
     res = trim_numbers(str, is_string_odd);
     if (res == ERROR)
         return EPITECH_KO;
