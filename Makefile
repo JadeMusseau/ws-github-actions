@@ -9,7 +9,8 @@
 
 SRC 	=	src/main.c \
 			src/utils.c \
-			src/swapupcase.c
+			src/swapupcase.c	\
+			src/hello.c
 
 TESTS_SRC 	=	src/utils.c \
 				src/swapupcase.c
