@@ -31,7 +31,9 @@ jobs:
             exit 1
           fi
           exit 0
+
   compile:
+
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GH repo
