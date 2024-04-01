@@ -72,10 +72,10 @@ jobs:
         uses: actions/checkout@master
 
       - name: Compile tests binaries
-        run: make unit_tests
+        run: make tests
 
       - name: Run unit tests
-        run: ./unit_tests
+        run: ./unit_testing
   
   push_to_mirror:
     runs-on: ubuntu-latest
