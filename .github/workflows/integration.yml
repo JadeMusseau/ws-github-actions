@@ -7,7 +7,7 @@ on:
     branches-ignore: [ga-ignore-*]
 
 env:
-  MIRROR_URL: 'https://github.com/EpitechPromo2028/B-DOP-200-BDX-2-1-chocolatine-jade.musseau.git'
+  MIRROR_URL: https://github.com/EpitechPromo2028/B-DOP-200-BDX-2-1-chocolatine-jade.musseau.git
   EXECUTABLES: 'swapupcase'
 
 jobs:
@@ -88,7 +88,7 @@ jobs:
         uses: actions/checkout@master
         
       - name: push to mirror
-        uses: pixta-dev/repository-mirroring-action@v1.1.1
+        uses: pixta-dev/repository-mirroring-action@v1
         with: 
           target_repo_url:
             ${{ env.MIRROR_URL }}
